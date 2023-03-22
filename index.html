@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vacation Destination</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
   </head>
   <body>
     <header>
@@ -14,7 +15,7 @@
     </header>
     <main id="flex-container">
       <div class="row">
-        <form id="left-form" action="/action_page.php">
+        <form class="input" action="/action_page.php">
               <label for="dname">Destination name</label><br>
               <input type="text" id="input" name="dest-name" placeholder="Enter the name of the location" required><br><br>
               <label for="lname">Location</label><br>
@@ -27,7 +28,7 @@
           </form>
         <div id="cards">
             <h2>Enter destination details</h2>
-            <!-- <div class="card" style="width: 18rem;">
+            <div class="card-top" style="width: 18rem;">
               <img class="card-img-top" src="..." alt="Card image
              cap">
               <div class="card-body">
@@ -35,15 +36,15 @@
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
-            </div> -->
+            </div> 
         </div>
       </div>
     </main>
 
-  <script>
+  <!-- <script>
     const form = document.querySelector('form');
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('click', (e) => {
       e.preventDefault();
       const fd = new FormData(form);
       //console.log(fd);
@@ -68,6 +69,6 @@
 
     } )
     
-  </script>
+  </script> -->
   </body>
 </html>
